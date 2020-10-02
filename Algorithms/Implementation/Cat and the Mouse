@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int q; 
+    scanf("%d",&q);
+    for(int a0 = 0; a0 < q; a0++){
+        int x,y,z; 
+        scanf("%d %d %d",&x,&y,&z);
+        if(abs(z-x)<abs(z-y))
+            printf("Cat A\n");
+        else if(abs(z-x)>abs(z-y))
+             printf("Cat B\n");
+        else
+             printf("Mouse C\n");
+    }
+    return 0;
+} 
